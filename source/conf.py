@@ -47,8 +47,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Ubuntu System Administration Quickstart'
-copyright = u'2017, Joseph Anthony C. Hermocilla'
+project = u'SRG Ubuntu Admin Recipes'
+copyright = u'2017,<a href="http://srg.ics.uplb.edu.ph">Systems Research Group</a>, ICS-UPLB'
 author = u'Joseph Anthony C. Hermocilla'
 
 # The version info for the project you're documenting, acts as replacement for
