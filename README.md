@@ -1,3 +1,5 @@
-# Enjoy! :)
+Ubuntu Admin Recipes
 
-https://srg-ics-uplb.github.io/SRG-ubuntu-admin-recipes/
+https://srg-ics-uplb.github.io/ubuntu-admin-recipes/
+
+
