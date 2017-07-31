@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'SRG Ubuntu Admin Recipes'
+project = u'Ubuntu Admin Recipes'
 copyright = u'2017,<a href="http://srg.ics.uplb.edu.ph">Systems Research Group</a>, ICS-UPLB'
 author = u'Joseph Anthony C. Hermocilla'
 
