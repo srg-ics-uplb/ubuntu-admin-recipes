@@ -8,4 +8,10 @@ Device Management
 
    $cat /proc/cpuinfo
 
+* View Memory information.
+
+.. code-block:: console
+
+   $cat /proc/meminfo
+
 
