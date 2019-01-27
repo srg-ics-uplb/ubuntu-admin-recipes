@@ -42,6 +42,12 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>free -m
 </pre></div>
 </div>
+<ul class="simple">
+<li>View memory memory used by a process (ex. firefox).</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>pmap <span class="sb">`</span>ps -A <span class="p">|</span> grep firefox <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span><span class="sb">`</span>
+</pre></div>
+</div>
 </div>
 
 
