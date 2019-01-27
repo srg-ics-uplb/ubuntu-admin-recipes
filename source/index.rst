@@ -8,12 +8,14 @@ Start getting your fingers dirty!
    intro
    install
    user_management
-   file_management
+   filesystem_management
    process_management
    disk_management
+   device_management
    network_management
    special_services
    maintenance
+   others
 
 Indices and tables
 ==================
