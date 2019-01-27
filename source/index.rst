@@ -8,9 +8,10 @@ Start getting your fingers dirty!
    intro
    install
    user_management
-   filesystem_management
    process_management
+   memory_management
    disk_management
+   filesystem_management
    device_management
    network_management
    special_services
