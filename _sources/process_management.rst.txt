@@ -2,7 +2,8 @@
 Process Management
 ==================
 
-Start and Stop Services/Processes
-=================================
 
+.. code-block:: console
+
+   $watch "ps -ax -o pid,psr,comm | grep firefox"
 
