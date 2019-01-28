@@ -2,17 +2,8 @@
 Network
 ==================
 
+* Download all pdf files in from the url.
 
-Network Configuration
-======================
+.. code-block:: console
 
-Setup DNS
-=========
-
-
-Remote Login
-============
-
-
-Setup Firewall
-==============
+   $wget -A pdf -m -p -E -k -K -np https://jachermocilla.org/publications/
