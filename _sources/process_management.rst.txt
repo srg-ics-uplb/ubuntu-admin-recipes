@@ -3,20 +3,20 @@
 Process Management
 ==================
 
-# View on what processors a process (ex. firefox) is running.
+#. View on what processors a process (ex. firefox) is running.
 
 .. code-block:: console
 
    $watch "ps -ax -o pid,psr,comm | grep firefox"
 
 
-# View the processes running on `CORENUM`.
+#. View the processes running on `CORENUM`.
 
 .. code-block:: console
 
    $CORENUM=1;ps -e -o pid,psr,comm,cmd | grep -E  "^[[:space:]][[:digit:]]+[[:space:]]+${CORENUM}"
 
-# Run a process (ex. google-chrome) on a specific core only.
+#. Run a process (ex. google-chrome) on a specific core only.
 
 .. code-block:: console
    
