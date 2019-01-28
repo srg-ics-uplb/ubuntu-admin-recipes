@@ -14,6 +14,7 @@ Start getting your fingers dirty!
    filesystem
    devices
    network
+   special_services
    maintenance
    others
 
