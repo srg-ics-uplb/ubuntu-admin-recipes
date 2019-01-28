@@ -36,6 +36,13 @@
             
   <div class="section" id="users">
 <h1>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Add a new user (ex. mbbdr) with sudo access.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo adduser mbbdr
+<span class="gp">$</span>sudo <span class="nb">echo</span> <span class="s2">&quot;mbbdr  ALL=(ALL:ALL) ALL&quot;</span> &gt;&gt; /etc/sudoers
+</pre></div>
+</div>
 </div>
 
 
