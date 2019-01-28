@@ -2,12 +2,8 @@
 Filesystem
 =====================
 
+Find all files modified since 28 days ago or less that are greater than 50MB and perform an ls on the found files.
 
-File ownership and permissions
-==============================
+.. code-block:: console
 
-Find files
-==========
-
-File Compression
-================
+   $find -type f -mtime -28 -size +50M -exec ls -lh {} \;
