@@ -1,7 +1,6 @@
-
-==================
-Process Management
-==================
+======================
+Processes and Services
+======================
 
 * View on what processors a process (ex. firefox) is running.
 
