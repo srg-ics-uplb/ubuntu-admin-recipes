@@ -2,15 +2,17 @@
 Disks
 ===============
 
-Mount filesystems
-=================
 
-Reinstall Grub
-==============
+* Show disk partitions
 
-Backup
-======
+.. code-block:: console
+   
+   $sudo fdisk -l
 
-Format Disk
-===========
+* Mount a file system
+
+
+
+
+
 
