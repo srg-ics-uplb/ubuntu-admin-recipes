@@ -1,5 +1,5 @@
 =================
-Device Management
+Devices 
 =================
 
 * View CPU information.

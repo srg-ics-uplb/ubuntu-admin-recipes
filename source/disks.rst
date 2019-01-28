@@ -1,5 +1,5 @@
 ===============
-Disk Management
+Disks
 ===============
 
 Mount filesystems
