@@ -1,5 +1,5 @@
 =================
-Memory Management
+Memory
 =================
 
 * View memory available and used.
