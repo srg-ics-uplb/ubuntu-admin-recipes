@@ -16,8 +16,8 @@ Process Management
 
    $CORENUM=1;ps -e -o pid,psr,comm,cmd | grep -E  "^[[:space:]][[:digit:]]+[[:space:]]+${CORENUM}"
 
-* Run a process on a specific core only.
+* Run a process (ex. google-chrome) on a specific core only.
 
 .. code-block:: console
    
-   taskset --cpu-list 2 /usr/bin/google-chrome
+   $taskset --cpu-list 2 /usr/bin/google-chrome
