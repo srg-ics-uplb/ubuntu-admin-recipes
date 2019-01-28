@@ -39,7 +39,7 @@
 <ul class="simple">
 <li>Find all files in <cite>/var</cite> modified since 28 days ago or less that are greater than 50MB and perform an <cite>ls</cite> on each found files.</li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>find -type f -mtime -28 -size +50M -exec ls -lh <span class="o">{}</span> <span class="se">\;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>find /var -type f -mtime -28 -size +50M -exec ls -lh <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
 </div>
