@@ -6,4 +6,4 @@ Filesystem
 
 .. code-block:: console
 
-   $find -type f -mtime -28 -size +50M -exec ls -lh {} \;
+   $find /var -type f -mtime -28 -size +50M -exec ls -lh {} \;
