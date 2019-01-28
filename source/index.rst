@@ -8,11 +8,11 @@ Start getting your fingers dirty!
    intro
    install
    users
-   processes
-   memory
-   disks
    filesystem
+   processes
    devices
+   disks
+   memory
    network
    special_services
    maintenance
