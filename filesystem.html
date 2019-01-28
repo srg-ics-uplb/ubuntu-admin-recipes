@@ -36,14 +36,9 @@
             
   <div class="section" id="filesystem">
 <h1>Filesystem<a class="headerlink" href="#filesystem" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="file-ownership-and-permissions">
-<h2>File ownership and permissions<a class="headerlink" href="#file-ownership-and-permissions" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="find-files">
-<h2>Find files<a class="headerlink" href="#find-files" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="file-compression">
-<h2>File Compression<a class="headerlink" href="#file-compression" title="Permalink to this headline">¶</a></h2>
+<p>Find all files modified since 28 days ago or less that are greater than 50MB and perform an ls on the found files.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>find -type f -mtime -28 -size +50M -exec ls -lh <span class="o">{}</span> <span class="se">\;</span>
+</pre></div>
 </div>
 </div>
 
@@ -72,12 +67,7 @@
 <li class="toctree-l1"><a class="reference internal" href="processes.html">Processes and Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="memory.html">Memory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="disks.html">Disks</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Filesystem</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#file-ownership-and-permissions">File ownership and permissions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#find-files">Find files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#file-compression">File Compression</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Filesystem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devices.html">Devices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="network.html">Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="special_services.html">Special Services</a></li>
