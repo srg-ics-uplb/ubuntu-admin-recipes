@@ -48,6 +48,12 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span><span class="nv">CORENUM</span><span class="o">=</span><span class="m">1</span><span class="p">;</span>ps -e -o pid,psr,comm,cmd <span class="p">|</span> grep -E  <span class="s2">&quot;^[[:space:]][[:digit:]]+[[:space:]]+</span><span class="si">${</span><span class="nv">CORENUM</span><span class="si">}</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li>Run a process on a specific core only.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">taskset --cpu-list 2 /usr/bin/google-chrome</span>
+</pre></div>
+</div>
 </div>
 
 
