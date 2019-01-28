@@ -36,21 +36,21 @@
             
   <div class="section" id="process-management">
 <h1>Process Management<a class="headerlink" href="#process-management" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic simple">
+<ul class="simple">
 <li>View on what processors a process (ex. firefox) is running.</li>
-</ol>
+</ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>watch <span class="s2">&quot;ps -ax -o pid,psr,comm | grep firefox&quot;</span>
 </pre></div>
 </div>
-<ol class="arabic simple">
+<ul class="simple">
 <li>View the processes running on <cite>CORENUM</cite>.</li>
-</ol>
+</ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span><span class="nv">CORENUM</span><span class="o">=</span><span class="m">1</span><span class="p">;</span>ps -e -o pid,psr,comm,cmd <span class="p">|</span> grep -E  <span class="s2">&quot;^[[:space:]][[:digit:]]+[[:space:]]+</span><span class="si">${</span><span class="nv">CORENUM</span><span class="si">}</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
-<ol class="arabic simple">
+<ul class="simple">
 <li>Run a process (ex. google-chrome) on a specific core only.</li>
-</ol>
+</ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>taskset --cpu-list <span class="m">2</span> /usr/bin/google-chrome
 </pre></div>
 </div>
