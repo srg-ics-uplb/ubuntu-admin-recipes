@@ -3,7 +3,7 @@
 Process Management
 ==================
 
-* View on what processor the firefox process is running.
+* View on what processors a process (ex. firefox) is running.
 
 .. code-block:: console
 
