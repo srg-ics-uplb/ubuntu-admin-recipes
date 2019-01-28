@@ -8,7 +8,7 @@ Start getting your fingers dirty!
    intro
    install
    users
-   processes_services
+   processes
    memory
    disks
    filesystem
