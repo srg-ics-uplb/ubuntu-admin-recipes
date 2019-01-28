@@ -2,7 +2,7 @@
 Network
 ==================
 
-* Download all pdf files in from the url.
+* Download all pdf files in the url.
 
 .. code-block:: console
 
