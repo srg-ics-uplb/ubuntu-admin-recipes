@@ -9,9 +9,12 @@ Disks
    
    $sudo fdisk -l
 
-* Mount a file system
+* View available disk space.
 
 
+.. code-block:: console
+   
+   $df -h
 
 
 
