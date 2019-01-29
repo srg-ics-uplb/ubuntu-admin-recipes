@@ -27,3 +27,9 @@ Network
 .. code-block:: console
 
    $cat /etc/resolv.conf
+
+* View the processes listening at a particular port.
+
+.. code-block:: console
+
+   $sudo netstat -tunlp
