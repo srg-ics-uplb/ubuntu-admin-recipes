@@ -16,6 +16,10 @@ Disks
    
    $df -h
 
+* Write an images to disk.
 
+.. code-block:: console
+
+   $sudo dd if=disk.img of=/dev/sdb1
 
 
