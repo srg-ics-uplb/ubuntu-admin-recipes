@@ -21,3 +21,9 @@ Network
 
    $route -n
    $ip route
+
+* View DNS resolver information.
+
+.. code-block:: console
+
+   $cat /etc/resolv.conf
