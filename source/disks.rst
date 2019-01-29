@@ -16,7 +16,7 @@ Disks
    
    $df -h
 
-* Write an images to disk.
+* Write an image or .iso to disk.
 
 .. code-block:: console
 
