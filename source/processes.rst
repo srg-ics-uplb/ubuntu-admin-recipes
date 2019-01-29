@@ -20,3 +20,11 @@ Processes and Services
 .. code-block:: console
    
    $taskset --cpu-list 2 /usr/bin/google-chrome
+
+* Start and stop the apache (or any service).
+
+.. code-block:: console
+
+   $sudo service apache start
+   $sudo service apache stop
+
