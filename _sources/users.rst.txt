@@ -17,3 +17,8 @@ Users
    $id mdq
 
 
+* Where are the password hashes stored?
+
+.. code-block:: console
+
+   $cat /etc/passed;cat /etc/groups;sudo cat /etc/shadow
