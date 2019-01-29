@@ -28,3 +28,8 @@ Processes and Services
    $sudo service apache start
    $sudo service apache stop
 
+* List the status of available services.
+
+.. code-block:: console
+
+   $sudo service --status-all
