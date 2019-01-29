@@ -36,6 +36,18 @@
             
   <div class="section" id="maintenance">
 <h1>Maintenance<a class="headerlink" href="#maintenance" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>View <cite>syslog</cite> contents continuously.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo tail -f /var/log/syslog
+</pre></div>
+</div>
+<ul class="simple">
+<li>View kernel ring buffer which contains information during bootup such as what devices were detected.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>dmesg
+</pre></div>
+</div>
 </div>
 
 
