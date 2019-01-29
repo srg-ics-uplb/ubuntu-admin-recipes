@@ -13,3 +13,9 @@ Filesystem
 .. code-block:: console
 
    $du -h
+
+* Find mounted partitions.
+
+.. code-block:: console
+
+   $findmnt
