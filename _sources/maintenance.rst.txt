@@ -14,4 +14,8 @@ Maintenance
 
    $dmesg
 
+* Update the packages.
 
+.. code-block:: console
+
+   $sudo apt-get update && sudo apt-get upgrade -y
