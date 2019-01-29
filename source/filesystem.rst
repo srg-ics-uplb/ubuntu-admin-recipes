@@ -7,3 +7,9 @@ Filesystem
 .. code-block:: console
 
    $find /var -type f -mtime -28 -size +50M -exec ls -lh {} \;
+
+* View sizes of directories.
+
+.. code-block:: console
+
+   $du -h
