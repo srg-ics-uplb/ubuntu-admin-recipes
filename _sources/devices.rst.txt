@@ -20,4 +20,9 @@ Devices
 
    $sudo cat /proc/iomem
 
+* Is my CPU 64-bit?Does it support virtualization?
+
+.. code-block:: console
+
+   $lscpu
 
