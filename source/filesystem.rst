@@ -19,3 +19,4 @@ Filesystem
 .. code-block:: console
 
    $findmnt
+   $cat /etc/mtab
