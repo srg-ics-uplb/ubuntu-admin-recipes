@@ -49,9 +49,10 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li>View the memory used by each user. (<a class="reference external" href="https://stackoverflow.com/questions/14214315/how-to-find-user-memory-usage-in-linux/14214516">https://stackoverflow.com/questions/14214315/how-to-find-user-memory-usage-in-linux/14214516</a>)</li>
+<li>View the memory used by each user.
+(Source: <a class="reference external" href="https://stackoverflow.com/questions/14214315/how-to-find-user-memory-usage-in-linux/14214516">https://stackoverflow.com/questions/14214315/how-to-find-user-memory-usage-in-linux/14214516</a>)</li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &quot;USER                 RSS      PROCS&quot; ; echo &quot;-------------------- -------- -----&quot; ; ps hax -o rss,user | awk &#39;{rss[$2]+=$1;procs[$2]+=1;}END{for(user in rss) printf &quot;%-20s %8.0f %5.0f\n&quot;, user, rss[user]/1024, procs[user];}&#39; | sort -rnk2</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span><span class="nb">echo</span> <span class="s2">&quot;USER                 RSS      PROCS&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;-------------------- -------- -----&quot;</span> <span class="p">;</span> ps hax -o rss,user <span class="p">|</span> awk <span class="s1">&#39;{rss[$2]+=$1;procs[$2]+=1;}END{for(user in rss) printf &quot;%-20s %8.0f %5.0f\n&quot;, user, rss[user]/1024, procs[user];}&#39;</span> <span class="p">|</span> sort -rnk2
 </pre></div>
 </div>
 </div>
