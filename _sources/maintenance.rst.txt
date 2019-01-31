@@ -19,3 +19,10 @@ Maintenance
 .. code-block:: console
 
    $sudo apt-get update && sudo apt-get upgrade -y
+
+* View system calls by process.
+
+.. code-block:: console
+
+   $strace cp hello.txt hello2.txt
+
