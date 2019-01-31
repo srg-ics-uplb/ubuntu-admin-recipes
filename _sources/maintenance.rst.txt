@@ -20,7 +20,7 @@ Maintenance
 
    $sudo apt-get update && sudo apt-get upgrade -y
 
-* View system calls by process.
+* View system calls used by a process.
 
 .. code-block:: console
 
