@@ -55,6 +55,10 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span><span class="nb">echo</span> <span class="s2">&quot;USER                 RSS      PROCS&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;-------------------- -------- -----&quot;</span> <span class="p">;</span> ps hax -o rss,user <span class="p">|</span> awk <span class="s1">&#39;{rss[$2]+=$1;procs[$2]+=1;}END{for(user in rss) printf &quot;%-20s %8.0f %5.0f\n&quot;, user, rss[user]/1024, procs[user];}&#39;</span> <span class="p">|</span> sort -rnk2
 </pre></div>
 </div>
+<p>or</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo apt-get install smem -y <span class="o">&amp;&amp;</span> smem -u -t -k
+</pre></div>
+</div>
 </div>
 
 
