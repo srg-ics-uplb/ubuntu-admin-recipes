@@ -68,6 +68,18 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo netstat -tunlp
 </pre></div>
 </div>
+<ul class="simple">
+<li>To Disable IPv6 add the following lines to <cite>/etc/sysctl.conf</cite>.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">net.ipv6.conf.all.disable_ipv6 = 1</span>
+<span class="go">net.ipv6.conf.default.disable_ipv6 = 1</span>
+<span class="go">net.ipv6.conf.lo.disable_ipv6 = 1</span>
+</pre></div>
+</div>
+<p>Run the following:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo sysctl -p</span>
+</pre></div>
+</div>
 </div>
 
 
@@ -99,7 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="memory.html">Memory</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="special_services.html">Special Services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance and Accounting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="others.html">Others</a></li>
 </ul>
 
@@ -140,7 +152,7 @@
       &copy;2017-2019,<a href="http://srg.ics.uplb.edu.ph">Systems Research Group</a>, ICS-UPLB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
