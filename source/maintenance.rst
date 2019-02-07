@@ -1,6 +1,6 @@
-===========
-Maintenance
-===========
+==========================
+Maintenance and Accounting
+==========================
 
 * View `syslog` contents continuously.
 
