@@ -46,4 +46,4 @@ Run the following:
 
 .. code-block:: console
 
-   sudo sysctl -p
+   $sudo sysctl -p
