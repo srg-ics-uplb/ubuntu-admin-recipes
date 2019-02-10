@@ -1,5 +1,9 @@
 Start getting your fingers dirty!
 ====================================
+.. |date| date::
+.. |time| date:: %H:%M
+
+(This document was updated on |date| at |time|.)
 
 .. toctree::
    :maxdepth: 2
