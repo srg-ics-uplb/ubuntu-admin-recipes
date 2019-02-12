@@ -1,4 +1,4 @@
-Start getting your fingers dirty!
+# man man
 ====================================
 .. |date| date::
 .. |time| date:: %H:%M
