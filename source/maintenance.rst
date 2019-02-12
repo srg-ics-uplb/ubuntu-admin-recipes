@@ -26,3 +26,9 @@ Maintenance and Accounting
 
    $strace cp hello.txt hello2.txt
 
+* View system status and performance.
+
+.. code-block:: console
+
+   $top
+
