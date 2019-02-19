@@ -67,6 +67,13 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo service --status-all
 </pre></div>
 </div>
+<ul class="simple">
+<li>Show process tree rooted at a given process id 30872.</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>ps f --forest -g <span class="k">$(</span>ps -osid<span class="o">=</span> -p <span class="m">30872</span><span class="k">)</span>
+<span class="gp">$</span>pstree <span class="m">30872</span>
+</pre></div>
+</div>
 </div>
 
 

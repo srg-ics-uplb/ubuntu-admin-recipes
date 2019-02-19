@@ -33,3 +33,10 @@ Processes and Services
 .. code-block:: console
 
    $sudo service --status-all
+
+* Show process tree rooted at a given process id 30872.
+
+.. code-block:: console
+
+   $ps f --forest -g $(ps -osid= -p 30872)
+   $pstree 30872
