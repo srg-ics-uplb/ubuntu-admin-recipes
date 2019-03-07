@@ -41,6 +41,13 @@ Processes and Services
    $ps f --forest -g $(ps -osid= -p 30872)
    $pstree 30872
 
+* Show threads in a process.
+
+.. code-block:: console
+
+   $ps -T -p 30872
+   $ps -fL -p 30872
+
 * Generate a core dump of a running process with PID=1234
 
 .. code-block:: console
