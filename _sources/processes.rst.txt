@@ -53,3 +53,9 @@ Processes and Services
 .. code-block:: console
 
    $sudo gcore 1234 
+
+* Change the niceness of a process
+
+.. code-block:: console
+
+   $sudo renice -n -11 -p 1234 
