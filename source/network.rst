@@ -47,3 +47,9 @@ Run the following:
 .. code-block:: console
 
    $sudo sysctl -p
+
+* Mirror a site
+
+.. code-block:: console
+
+   wget --mirror --convert-links --adjust-extension --page-requisite --no-parent http://example.org
