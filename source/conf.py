@@ -44,7 +44,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'intro'
 
 # General information about the project.
 project = u'Ubuntu Admin Recipes'
