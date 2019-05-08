@@ -18,7 +18,6 @@ Supported Ubuntu Version: 16.04 LTS (64-bit)
    :maxdepth: 2
    :caption: Contents:
 
-   intro
    install
    users
    filesystem
