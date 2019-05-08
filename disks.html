@@ -54,6 +54,36 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo dd <span class="k">if</span><span class="o">=</span>disk.img <span class="nv">of</span><span class="o">=</span>/dev/sdb1
 </pre></div>
 </div>
+<ul class="simple">
+<li>Get the number of blocks used by a file</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo debugfs -R <span class="s2">&quot;stat hello.txt&quot;</span> /dev/sda
+</pre></div>
+</div>
+<ul class="simple">
+<li>Get the block size</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo blockdev --getbsz /dev/sda
+</pre></div>
+</div>
+<ul class="simple">
+<li>Get statistics for I/O</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo apt install sysstat <span class="o">&amp;&amp;</span> sudo iostat -u
+</pre></div>
+</div>
+<ul class="simple">
+<li>View available I/O schedulers</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>cat /sys/block/sda/queue/scheduler
+</pre></div>
+</div>
+<ul class="simple">
+<li>Get statistics of disk</li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo hdparm -tT /dev/sda
+</pre></div>
+</div>
 </div>
 
 
