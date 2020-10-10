@@ -21,7 +21,7 @@ Filesystem
    $findmnt
    $cat /etc/mtab
 
-* Create a DOS disk image
+* Create a DOS disk image.
 
 .. code-block:: console
 
