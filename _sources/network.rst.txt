@@ -48,8 +48,15 @@ Run the following:
 
    $sudo sysctl -p
 
-* Mirror a site
+* Mirror a site.
 
 .. code-block:: console
 
-   wget --mirror --convert-links --adjust-extension --page-requisite --no-parent http://example.org
+   $wget --mirror --convert-links --adjust-extension --page-requisite --no-parent http://example.org
+
+* Get network information from DHCP.
+
+
+.. code-block:: console
+
+   $sudo hclient -v enp0s3
