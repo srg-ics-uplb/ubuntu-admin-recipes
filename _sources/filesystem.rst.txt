@@ -20,3 +20,9 @@ Filesystem
 
    $findmnt
    $cat /etc/mtab
+
+* Create a DOS disk image
+
+.. code-block:: console
+
+   $mkfs.msdos -C myfloppy.img 1440
