@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Ubuntu Admin Recipes'
-copyright = u'2017-2019,<a href="http://srg.ics.uplb.edu.ph">Systems Research Group</a>, ICS-UPLB'
+copyright = u'2017-2020,<a href="http://srg.ics.uplb.edu.ph">Systems Research Group</a>, ICS-UPLB'
 author = u'Joseph Anthony C. Hermocilla'
 
 # The version info for the project you're documenting, acts as replacement for
