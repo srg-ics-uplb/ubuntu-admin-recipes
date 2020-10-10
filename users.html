@@ -39,7 +39,7 @@
 <li><p>Add a new user (ex. mbbdr) with sudo access.</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo adduser mbbdr
-<span class="gp">$</span>sudo <span class="nb">echo</span> <span class="s2">&quot;mbbdr  ALL=(ALL:ALL) ALL&quot;</span> &gt;&gt; /etc/sudoers
+<span class="gp">$</span>sudo usermod -aG sudo mbbdr
 </pre></div>
 </div>
 <ul class="simple">

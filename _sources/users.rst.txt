@@ -7,8 +7,7 @@ Users
 .. code-block:: console
 
    $sudo adduser mbbdr
-   $sudo echo "mbbdr  ALL=(ALL:ALL) ALL" >> /etc/sudoers
-
+   $sudo usermod -aG sudo mbbdr
 
 * View the user id of a user (ex. mdq).
 
