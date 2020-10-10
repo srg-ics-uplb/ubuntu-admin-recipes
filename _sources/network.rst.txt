@@ -59,4 +59,4 @@ Run the following:
 
 .. code-block:: console
 
-   $sudo hclient -v enp0s3
+   $sudo dhclient -v enp0s3
