@@ -59,3 +59,11 @@ Processes and Services
 .. code-block:: console
 
    $sudo renice -n -11 -p 1234 
+
+* Terminate a process
+
+.. code-block:: console
+
+   $kill <pid>
+   $kill -9 <pid>
+   $killall <process name>
