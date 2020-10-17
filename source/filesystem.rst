@@ -33,7 +33,7 @@ Filesystem
 
    $mkfs.msdos -C myfloppy.img 1440
 
-* Mounti/Mount a disk image through a loop device.
+* Mount/Unmount a disk image through a loop device.
 
 .. code-block:: console
 
