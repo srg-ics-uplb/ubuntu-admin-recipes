@@ -55,9 +55,23 @@
 </pre></div>
 </div>
 <ul class="simple">
+<li><p>View disks and partitions.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo fdisk -l
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Create a DOS disk image.</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>mkfs.msdos -C myfloppy.img <span class="m">1440</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Mounti/Mount a disk image through a loop device.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>mkdir mnt_tmp
+<span class="gp">$</span>sudo mount -oloop myfloppy.img mnt_tmp/
+<span class="gp">$</span>sudo umount mnt_tmp/
 </pre></div>
 </div>
 </div>
