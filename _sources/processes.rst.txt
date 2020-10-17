@@ -27,6 +27,8 @@ Processes and Services
 
    $sudo service apache start
    $sudo service apache stop
+   $sudo systemctl apache start
+   $sudo systemctl apache stop
 
 * List the status of available services.
 
