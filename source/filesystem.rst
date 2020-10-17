@@ -21,8 +21,22 @@ Filesystem
    $findmnt
    $cat /etc/mtab
 
+* View disks and partitions.
+
+.. code-block:: console
+
+   $sudo fdisk -l
+
 * Create a DOS disk image.
 
 .. code-block:: console
 
    $mkfs.msdos -C myfloppy.img 1440
+
+* Mounti/Mount a disk image through a loop device.
+
+.. code-block:: console
+
+   $mkdir mnt_tmp
+   $sudo mount -oloop myfloppy.img mnt_tmp/
+   $sudo umount mnt_tmp/
