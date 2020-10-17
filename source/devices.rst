@@ -26,3 +26,14 @@ Devices
 
    $lscpu
 
+* View PCI devices.
+
+.. code-block:: console
+
+   $lspci
+
+* View devices.
+
+.. code-block:: console
+
+   $lshw
