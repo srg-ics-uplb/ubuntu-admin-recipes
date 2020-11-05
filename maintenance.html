@@ -66,9 +66,11 @@
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>View the list of packages installed via apt</p></li>
+<li><p>View the list of packages installed via apt
+(See <a class="reference external" href="https://askubuntu.com/questions/17012/is-it-possible-to-get-a-list-of-most-recently-installed-packages">https://askubuntu.com/questions/17012/is-it-possible-to-get-a-list-of-most-recently-installed-packages</a>)</p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>gunzip -c <span class="sb">`</span>ls -tr /var/log/dpkg.log.*.gz<span class="sb">`</span> <span class="p">|</span> grep <span class="s2">&quot; install &quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>zcat -f /var/log/dpkg.log* <span class="p">|</span> grep <span class="s2">&quot; install &quot;</span> <span class="p">|</span> sort &gt; /tmp/dpkg.log
+<span class="gp">$</span>grep -F <span class="s2">&quot;`comm -12 &lt;(apt-mark showmanual | sort) &lt;(cat /tmp/dpkg.log | cut -d &quot;</span> <span class="s2">&quot; -sf4 | grep -o &quot;</span>^<span class="o">[</span>^:<span class="o">]</span>*<span class="s2">&quot; | sort)`&quot;</span> /tmp/dpkg.log <span class="p">|</span> grep <span class="se">\&lt;</span>none<span class="se">\&gt;</span>
 </pre></div>
 </div>
 </div>
