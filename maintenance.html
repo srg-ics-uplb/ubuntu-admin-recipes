@@ -65,6 +65,12 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>top
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>View the list of packages installed via apt</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>gunzip -c <span class="sb">`</span>ls -tr /var/log/dpkg.log.*.gz<span class="sb">`</span> <span class="p">|</span> grep <span class="s2">&quot; install &quot;</span>
+</pre></div>
+</div>
 </div>
 
 
