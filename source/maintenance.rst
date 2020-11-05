@@ -32,3 +32,8 @@ Maintenance and Accounting
 
    $top
 
+* View the list of packages installed via apt
+
+.. code-block:: console
+
+   $gunzip -c `ls -tr /var/log/dpkg.log.*.gz` | grep " install "
