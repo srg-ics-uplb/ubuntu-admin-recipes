@@ -33,7 +33,9 @@ Maintenance and Accounting
    $top
 
 * View the list of packages installed via apt
+  (See https://askubuntu.com/questions/17012/is-it-possible-to-get-a-list-of-most-recently-installed-packages)
 
 .. code-block:: console
 
-   $gunzip -c `ls -tr /var/log/dpkg.log.*.gz` | grep " install "
+   $zcat -f /var/log/dpkg.log* | grep " install " | sort > /tmp/dpkg.log
+   $grep -F "`comm -12 <(apt-mark showmanual | sort) <(cat /tmp/dpkg.log | cut -d " " -sf4 | grep -o "^[^:]*" | sort)`" /tmp/dpkg.log | grep \<none\>
