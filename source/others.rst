@@ -2,4 +2,4 @@
 Others
 ===========
 
-* `Archiving <./archiving.html>`_
+* `Archiving`_
