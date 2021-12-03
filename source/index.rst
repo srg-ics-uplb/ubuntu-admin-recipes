@@ -12,7 +12,7 @@ linux distribution of choice because it is widely supported by the community
 and is used in physical and virtualized environments. 
 
 
-Tested on Ubuntu Version: 16.04 LTS (64-bit), 18.04 LTS (64-bit) 
+Tested on Ubuntu Version: 20.04 LTS (64-bit), 18.04 LTS (64-bit), 16.04 LTS (64-bit)
 
 .. toctree::
    :maxdepth: 2
