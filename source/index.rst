@@ -17,7 +17,6 @@ Tested on Ubuntu Version: 16.04 LTS (64-bit), 18.04 LTS (64-bit)
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   :glob:
 
    install
    users
@@ -29,7 +28,7 @@ Tested on Ubuntu Version: 16.04 LTS (64-bit), 18.04 LTS (64-bit)
    network
    special_services
    maintenance
-   others/*
+   others
 
 Indices and tables
 ==================
