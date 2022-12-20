@@ -63,6 +63,7 @@
 <li><p>View system status and performance.</p></li>
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>top
+<span class="gp">$</span>htop
 </pre></div>
 </div>
 <ul class="simple">
@@ -71,6 +72,13 @@
 </ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>zcat -f /var/log/dpkg.log* <span class="p">|</span> grep <span class="s2">&quot; install &quot;</span> <span class="p">|</span> sort &gt; /tmp/dpkg.log
 <span class="gp">$</span>grep -F <span class="s2">&quot;`comm -12 &lt;(apt-mark showmanual | sort) &lt;(cat /tmp/dpkg.log | cut -d &quot;</span> <span class="s2">&quot; -sf4 | grep -o &quot;</span>^<span class="o">[</span>^:<span class="o">]</span>*<span class="s2">&quot; | sort)`&quot;</span> /tmp/dpkg.log <span class="p">|</span> grep <span class="se">\&lt;</span>none<span class="se">\&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Find large packages.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>dpkg --list <span class="p">|</span>grep <span class="s2">&quot;^rc&quot;</span> <span class="p">|</span> cut -d <span class="s2">&quot; &quot;</span> -f <span class="m">3</span> <span class="p">|</span> xargs sudo dpkg --purge
+<span class="gp">$</span>dpkg-query -Wf <span class="s1">&#39;${Installed-Size}\t${Package}\n&#39;</span> <span class="p">|</span> sort -nr <span class="p">|</span> less
 </pre></div>
 </div>
 </section>

@@ -31,6 +31,7 @@ Maintenance and Accounting
 .. code-block:: console
 
    $top
+   $htop
 
 * View the list of packages installed via apt
   (See https://askubuntu.com/questions/17012/is-it-possible-to-get-a-list-of-most-recently-installed-packages)
@@ -39,3 +40,12 @@ Maintenance and Accounting
 
    $zcat -f /var/log/dpkg.log* | grep " install " | sort > /tmp/dpkg.log
    $grep -F "`comm -12 <(apt-mark showmanual | sort) <(cat /tmp/dpkg.log | cut -d " " -sf4 | grep -o "^[^:]*" | sort)`" /tmp/dpkg.log | grep \<none\>
+
+* Find large packages.
+
+.. code-block:: console
+
+   $dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+   $dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -nr | less
+
+
