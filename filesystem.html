@@ -74,6 +74,12 @@
 <span class="gp">$</span>sudo umount mnt_tmp/
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Find large files in home directory.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>find <span class="nv">$HOME</span> -type f -printf <span class="s1">&#39;%s %p\n&#39;</span> <span class="p">|</span> sort -nr <span class="p">|</span> head -10
+</pre></div>
+</div>
 </section>
 
 

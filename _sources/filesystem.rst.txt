@@ -40,3 +40,11 @@ Filesystem
    $mkdir mnt_tmp
    $sudo mount -oloop myfloppy.img mnt_tmp/
    $sudo umount mnt_tmp/
+
+* Find large files in home directory.
+
+.. code-block:: console
+
+   $find $HOME -type f -printf '%s %p\n' | sort -nr | head -10
+
+
